@@ -8,8 +8,8 @@
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-  [Personal Webpage](https://www.josiahparkhill.dev/)
+- Solution URL: [product-preview-card-component-jp.netlify.app](product-preview-card-component-jp.netlify.app)
+- Personal Webpage: [https://www.josiahparkhill.dev/](https://www.josiahparkhill.dev/)
 
 ### My Process
 

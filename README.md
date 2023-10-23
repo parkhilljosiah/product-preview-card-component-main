@@ -8,7 +8,7 @@
 
 ### Links
 
-- Solution URL: [product-preview-card-component-jp.netlify.app](product-preview-card-component-jp.netlify.app)
+- Solution URL: [https://product-preview-card-component-jp.netlify.app/](https://product-preview-card-component-jp.netlify.app/)
 - Personal Webpage: [https://www.josiahparkhill.dev/](https://www.josiahparkhill.dev/)
 
 ### My Process

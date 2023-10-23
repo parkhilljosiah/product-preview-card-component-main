@@ -1,38 +1,138 @@
-.App {
+.container {
+  background-color: var(--white);
+  width: 90%;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 0.5em;
+}
+
+.image {
+  width: 100%;
+  border-radius: 0.5em 0.5em 0 0;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  margin: 1.5em;
+}
+
+.subheading,
+.text,
+.price-sub,
+.button {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.heading,
+.price-main {
+  font-family: "Fraunces", serif;
+  font-size: 28px;
+}
+
+.subheading {
+  color: var(--dark-grayish-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  margin: 0;
+}
+
+.heading {
+  color: var(--very-dark-blue);
+  margin: 0;
+  margin-block: 0.5em;
+  line-height: 0.85em;
+}
+
+.text {
+  color: var(--dark-grayish-blue);
+  margin-top: 0.25em;
+  line-height: 1.5em;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  margin-bottom: 0.5em;
+}
+
+.price-main {
+  color: var(--dark-cyan);
+  margin: 0;
+}
+
+.price-sub {
+  color: var(--dark-grayish-blue);
+  text-decoration: line-through;
+}
+
+.button {
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  background-color: var(--dark-cyan);
+  border: none;
+  border-radius: 0.5em;
+  color: var(--white);
+}
+
+.button:hover,
+.button:focus {
+  background-color: #285544;
+}
+
+.attribution {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 0.75em;
+  position: absolute;
+  bottom: 1em;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.attribution > a {
+  color: var(--dark-cyan);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.attribution > a:hover,
+.attribution > a:focus {
+  color: #285544;
+}
+
+@media screen and (min-width: 750px) {
+  .container {
+    width: 50%;
+    height: fit-content;
+    display: flex;
   }
-}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .image {
+    height: 100%;
+    border-radius: 0.5em 0 0 0.5em;
   }
-  to {
-    transform: rotate(360deg);
+
+  .bottom {
+    align-self: center;
+    width: 100%;
+    height: fit-content;
+    justify-content: space-around;
+    gap: 1em;
+    margin: 1em;
+  }
+
+  .attribution {
+   font-size: 1em;
   }
 }
